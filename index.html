@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  href="https://www.fontspace.com/dragon-hunter-font-f92096">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/6851/6851302.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Rock-Paper-Scissors</title>
+</head>
+<body>
+    
+    <main>
+        <header>
+            <h1 class="heading">Rock  Paper  Scissors</h1>
+            <div class="scores">
+                <p>user score : <span id="user-score">0</span></p>
+                <p>computer score : <span id="comp-score">0</span></p>
+            </div>
+        </header>
+    
+        <div class="weapons-container">
+            <button class="rock-btn" id="rock-btn"onclick="check('rock')"><i class="fa-regular fa-hand-back-fist fa-2xl"></i></button>
+            <button class="paper-btn" id="paper-btn" onclick="check('paper')"><i class="fa-regular fa-hand fa-2xl"></i></button>
+            <button class="scissors-btn" id="scissors-btn"onclick="check('scissors')"><i class="fa-regular fa-hand-scissors fa-2xl"></i></button>
+        </div>
+    
+        <div class="content">let's play</div>
+    
+        <div class="result-container">
+            <p class="user-choice" id="user-choice"></p>
+            <p class="comp-choice" id="comp-choice"></p>
+            <p class="result" id="result"></p>
+    
+            <button class="reset-btn" id="reset-btn">Reset</button>
+        </div>
+    </main>
+    
+
+    <!-- <img src="https://cdn-icons-png.flaticon.com/512/6793/6793733.png" alt="">--for icon ref... -->
+
+    <script src="js/script.js"></script>
+</body>
+</html>

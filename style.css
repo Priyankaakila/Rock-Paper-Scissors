@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@200..800&family=Sedan+SC&display=swap');
+
+body{
+    /* font-family: "BioRhyme", serif; */
+    font-family: "Sedan SC", serif;
+    font-optical-sizing: auto;
+    font-size: 18px;
+    background-color: #202732;
+    color: #f2bc4b;
+    margin: 0;
+    padding: 0;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    margin: -2rem;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.scores{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+    margin: -2rem 0 2rem 0;
+}
+h1{
+    font-size: 4rem;
+    font-weight: 500;
+}
+p{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.weapons-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+.weapons-container button{
+    cursor: pointer;
+    font-family: "Sedan SC", serif;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    color: #f2bc4b;
+    background-color: transparent;
+    border-color: #f2bc4b;
+    border-width: 4px;
+}
+.content{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+.result-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+}
+.reset-btn{
+    color: #f2bc4b;
+    background-color: transparent;
+    border-color: #f2bc4b;
+    border-width: 4px;
+    margin-top: 2rem; 
+    padding: 0.5rem 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* ----------------------responsiveness-------------------------- */
+
+@media (max-width: 768px) {
+    main{
+        padding: 10px;
+        margin: 0;
+    }
+}
+@media  (max-width: 660px) {
+    main{
+        padding: 10px;
+        margin: 0;
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+    .scores{
+        margin-top: 0.5rem;
+        padding:0 20px 0 10px;
+
+    }
+    .scores>p{
+        font-size: 1.35rem;
+        width: 100px;
+    }
+    
+}
+@media  (max-width: 425px) {
+    main{
+        margin: 0;
+        padding:0;
+    }
+    h1{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .scores{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5rem;
+        /* margin: -2rem 0 2rem 0; */
+        margin-top: 1rem;
+    }
+    .scores>p{
+        font-size: 1.2rem;
+        width: 5rem;
+    }
+    .result-container>p{
+        font-size: 1.2rem;
+    }
+}
